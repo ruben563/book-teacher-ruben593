@@ -5,30 +5,91 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="bootstrap.css">
-
-<style>
-/* STYLE GOES HERE IF NEEDED */
-</style>
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
 
+<div class="jumbotron text-light text-center">
   <h1>Book a Teacher</h1>
   <p>User Experience Web Interface Design</p> 
-  
-  <nav>
-  <!-- NAVIGATION GOES HERE -->
-  
-  </nav>
+</div>
 
+<nav>
+  <ul class="nav nav-tabs">
+    <li class="nav-item"><a href="https://codepen.io/AliciaHeraz/pen/ExaawNB" target=_blank class="nav-link">Teachers</a></li>
+
+    <li class="nav-item"><a href="" class="nav-link active">Booking</a></li>
+        <li class="nav-item"><a href="" class="nav-link disabled">About</a></li>
+    
+  </ul>
+</nav> 
   <div class="container">
-  <!-- FORM GOES HERE -->
+  <form>
+    <div class="row">
+      <div class="col-lg-6">
+        <label class="ltitle" for="inputName">Name</label>
+        <input type="name" class="form-control" id="inputName" placeholder="Name" required>
+    
+      <label class="ltitle" for="inputEmail">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+  
+      <label class="ltitle" for="inputPhone">Phone</label>
+      <input type="tel" class="form-control" id="inputPhone" placeholder="Phone">
+   
+      <label class="ltitle" for="inputTopic">Topics to discuss</label><br>
+      <textarea name="inputTopic" id="inputTopic" cols="50" rows="3"></textarea>
+    </div>
+    <div class="col-lg-6">
+      <label class="ltitle" for="inputLevel">Level</label>
+      <select id="inputLevel" class="form-control">
+        <option selected>Choose...</option>
+        <option>Beginner</option>
+        <option>Basic</option>
+        <option>Advanced</option>
+      </select>
+     
+      <label class="ltitle" for="gridCheck">Time of Choice</label>
+      <div class="form-check">
+      <input class="form-check-input" type="radio" checked id="gridCheck"><label class="form-check-label" for="gridCheck">Day</label>
+      
+      </div>
+      <div class="form-check">
+      <input class="form-check-input" type="radio" id="gridCheck"><label class="form-check-label" for="gridCheck">Evening</label>
+      
+      </div>
 
+      <label class="ltitle" for="inputDate">Date</label>
+      <input type="date" class="form-control" id="inputDate">
+
+      <div class="form-group">
+        <label class="ltitle" for="gridCheck">Invite Teachers</label>
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" checked id="gridCheck"><label class="form-check-label" for="gridCheck">Jennifer</label>
+      
+        </div>
+        <div class="form-check">
+      <input class="form-check-input" type="checkbox" checked id="gridCheck"><label class="form-check-label" for="gridCheck">Reza</label>
+        </div>
+        <div class="form-check">
+      <input class="form-check-input" type="checkbox" checked id="gridCheck"><label class="form-check-label" for="gridCheck">Alicia</label>
+        </div>
+  </div>
+      </div>
+      	<div>
+		<button type="submit" class="btn btn-primary">Book</button>
+  <button type="reset" class="btn btn-primary">Clear</button>
+	</div>
+   </div>   
+  
+</form>
   </div>
   
-<footer>
-    <div>Made with Love in Saint-Lambert</div>
+<footer class="page-footer bg-dark text-light mt-5 font-small pt-4">
+
+  <!-- Copyright -->
+  <div class="pb-4 footer-copyright text-center py-3">Made with Love in Saint-Lambert
+  </div>
+  <!-- Copyright -->
 </footer>  
 
 </body>
