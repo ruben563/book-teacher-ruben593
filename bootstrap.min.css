@@ -1,0 +1,21 @@
+.jumbotron{
+  	background: #ff914d !important;
+}
+
+.jumbotron h1{
+  font-family: 'Staatliches', cursive;
+  font-size: 4em;
+}
+
+.ltitle{
+  padding-top: 0.5em;
+  font-weight: bold;
+}
+
+textarea
+{
+  border:1px solid #999999;
+  width:100%;
+  margin:5px 0;
+  padding:3px;
+}
